@@ -51,7 +51,13 @@ public class Main {
         
         // ClassConstructTransport truck = new ClassConstructTransport(140.5f, 5600);
         
-        
+        // TransportCAR bmw = new TransportCAR();
+        // TransportTRUCK truck = new TransportTRUCK(); // по умолчанию не загружен
+        // truck.getLoaded();
+        // truck.setLoaded(true);
+        // truck.getLoaded();
+        // truck.setValues(123.4f, 4567, "Red", new byte[] {0,0,0});
+        // bmw.setValues(193.8f, 2232, "Blue", new byte[] {10,20,20});
 
         scan.close();
     }
