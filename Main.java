@@ -2,6 +2,8 @@ package firstStep;
 
 import java.util.Scanner;
 
+// import firstStep.DBfolder.DB; импорт класса из вложенного пакета
+
 // import firstStep.Variable;
 
 public class Main {
@@ -59,7 +61,27 @@ public class Main {
         // truck.setValues(123.4f, 4567, "Red", new byte[] {0,0,0});
         // bmw.setValues(193.8f, 2232, "Blue", new byte[] {10,20,20});
 
+        // DB
+
+        // info();
+        // info("Voold");
+
+        // Person.count = 5;
+
+        TransportCAR bmw = new TransportCAR();
+
+        bmw.setLight(true);
+        bmw.blinkLight();
+
         scan.close();
+    }
+
+    public static void info(){
+        System.out.println("Hello");
+    }
+
+    public static void info(String UserName){
+        System.out.println("Hello, "+UserName);
     }
 
 }

@@ -1,6 +1,9 @@
 package firstStep;
 
-public class TransportCAR extends ClassConstructTransport {
+public class TransportCAR extends ClassConstructTransport implements ILights {
+
+
+    private boolean isOn;
 
     public TransportCAR(){
 
@@ -8,6 +11,16 @@ public class TransportCAR extends ClassConstructTransport {
 
     public TransportCAR(float speed, int weight, String color, byte[] coord){
         super(speed, weight, color, coord);
+    }
+
+    @Override
+    public void setLight(boolean set) {
+        this.isOn = set;
+    }
+
+    @Override
+    public void blinkLight() {
+        System.out.println("Мы моргаем фарами");
     }
     
     // @Override
